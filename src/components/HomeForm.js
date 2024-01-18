@@ -22,7 +22,8 @@ function HomeForm() {
                body: JSON.stringify({
                    "url": longUrl,
                    "domain": "tinyurl.com",
-                   "description": urlDesc
+                   "description": urlDesc,
+                //    "alias": "customurl" Alias is not working for the custom link. Refer to the https://tinyurl.com/app/dev
                  }),
              }).then(response => response.json())
              .then(data =>{ 
